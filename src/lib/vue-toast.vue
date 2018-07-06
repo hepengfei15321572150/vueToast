@@ -18,7 +18,9 @@ export default{
 		}
 	},
 	mounted(){
-
+		if( this.isShow ){
+			this.show();	
+		}
 	},
 	methods:{
 		show(){
