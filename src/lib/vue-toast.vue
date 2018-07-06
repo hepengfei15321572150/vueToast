@@ -17,7 +17,8 @@ export default{
 			}
 		}
 	},
-	mounted(){
+	create(){
+		console.log('创建成功了')
 		if( this.isShow ){
 			this.show();	
 		}
