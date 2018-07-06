@@ -9,6 +9,7 @@ export default{
 	props:['text','isShow'],
 	watch:{
 		isShow(newVal,oldVal){
+			console.log('变化了')
 			if( newVal ){
 				this.show();		
 			}else{
@@ -21,6 +22,7 @@ export default{
 	},
 	methods:{
 		show(){
+			console.log('show')
 			let div = document.createElement('div');
 			div.id = 'toast';
 			div.style.position = 'absolute';
@@ -34,6 +36,7 @@ export default{
 			document.body.appendChild(div);
 		},
 		hide(){
+			console.log('hide')
 			let div = document.getElementById('toast');
 			let body = document.getElementsByTagName('body')[0];
 
